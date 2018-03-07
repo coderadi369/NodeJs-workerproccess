@@ -1,0 +1,42 @@
+{
+  "name": "workerprocess",
+  "version": "1.0.0",
+  "description": "worker process for handling requests in expressjs",
+  "main": "index.js",
+  "scripts": {
+    "test":"./node_modules/.bin/mocha",
+    "test-scirpts": "eslint .",
+    "start": "port=3000 nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderadi369/NodeJs-workerproccess.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Redis",
+    "ExpressJS"
+  ],
+  "author": "adithya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderadi369/NodeJs-workerproccess/issues"
+  },
+  "homepage": "https://github.com/coderadi369/NodeJs-workerproccess#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^5.0.4",
+    "nodemon": "^1.17.1"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "winston": "^2.4.0"
+  }
+}
