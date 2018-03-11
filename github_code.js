@@ -1,4 +1,9 @@
 const rp=require("request-promise")
+const mysql_config=require("./mysql_config")
+const winston=require('winston')
+
+
+
 const options={
 	uri:"https://api.github.com/search/repositories?q=",
 	headers: {
@@ -6,6 +11,10 @@ const options={
     },
     json:true
 }
+
+
+let conn=mysql_config.getconnection();
+
 
 
 let search_repo=(req,res)=>{
