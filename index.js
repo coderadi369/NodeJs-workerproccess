@@ -4,6 +4,7 @@ const winston=require("winston")
 const port=process.env.port || 3000
 const github_code=require("./api/github_code")
 const worker_process=require("./worker_process/index")
+//const server=app.listen(3001)
 
 winston.level="debug"
 
@@ -18,3 +19,15 @@ app.get("/search_repo",(req,res)=>{
 
 
 app.listen(port,()=>winston.info("server is running successfully"))
+
+/*
+process.on('SIGINT', shutdown);
+
+// Do graceful shutdown
+function shutdown() {
+  console.log('graceful shutdown express');
+  server.close(function () {
+    console.log('closed express');
+  });
+}
+*/
