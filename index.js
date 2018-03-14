@@ -8,6 +8,7 @@ const worker_process=require("./worker_process/index")
 winston.level="debug"
 
 app.get("/",(req,res)=>{
+	worker_process.publisher.publish("test","Testing redis sucessful")
 	res.send("Welcome to NodeJs worker process running on port "+port)
 })
 
