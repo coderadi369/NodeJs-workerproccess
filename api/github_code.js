@@ -1,5 +1,5 @@
 const rp=require("request-promise")
-const mysql_config=require("./mysql_config")
+const mysql_config=require("../mysql/mysql_config")
 const winston=require('winston')
 
 
@@ -16,7 +16,3 @@ const options={
 let conn=mysql_config.getconnection();
 
 
-module.exports={
-	search_repo:search_repo,
-	get_contributors:get_contributors
-}
